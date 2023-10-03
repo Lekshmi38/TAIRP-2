@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta content="width=device-width,initial-scale=1.0">
+<meta name="viewport">
+<link rel="stylesheet" href="recipe1.css">
+<title>reciepe</title>
+<script>
+const array=[{
+    ink:"chickenbiri.html",
+    pic:"chickenbiriyanai.jpg",
+id:"CHICKEN BIRIYANI",
+abt:"Chicken Biryani is a delicious savory rice dish that is loaded with spicy marinated chicken, caramelized onions, and flavorful saffron rice.",
+},{
+pic:"images.jpg",
+id:"BEEF STEW",
+abt:"This Beef Stew Recipe is perfect for the colder weather! Tender beef is simmered in beef broth with potatoes, onions, celery, peas<",
+},
+{
+    ink:"vegetarian.html",
+pic:"download.jpg",
+id:"Vegetable Soup",
+abt:"This vegetable soup uses veggies like carrots, peas, sweet corn, green beans and cabbage. It is flavored with ginger, garlic, spring onions",
+},
+{
+    ink:"dessert.html",
+pic:"download (1).jpg",
+id:"Black Forest Cake",
+abt:'Black forest cake also known as Black Forest gateau, is a classic chocolate sponge cake with cream and cherry filling, based on a German dessert',
+},{
+    ink:"chickenbiri.html",
+pic:"download (2).jpg",
+id:"Fried Chicken",
+abt:"A quick dredge of buttermilk and seasoned flour is the secret to this perfectly moist, crunchy Fried Chicken recipe.",
+}];
+let count=0;
+function prv(){
+    count--;
+    const hd=document.getElementById("secimg");
+    const ad=document.getElementById('head');
+    const at=document.getElementById("about");
+
+    const rev=array[count];
+    hd.src=rev.pic;
+    ad.textContent=rev.id;
+    at.textContent=rev.abt;
+}
+function nxt(){
+    count++;
+    const hd=document.getElementById("secimg");
+    const ad=document.getElementById('head');
+    const at=document.getElementById("about");
+    const lk=document.getElementById('link');
+    const rev=array[count];
+    lk.href=rev.ink;
+    hd.src=rev.pic;
+    ad.textContent=rev.id;
+    at.textContent=rev.abt;
+}
+</script>
+</head>
+<body>
+    <section class="sec1">
+<h1 class="heading">&#128104;&#8205;&#127859;WonderRecipe!</h1>
+<nav>
+    <ul type="none" class="list1">
+        <li>HOME</li>
+        <li><a href="mailto:b.k.lekshmic1@gmail.com"  >CONTACT</a></li>
+        <li>RECIPES</li>
+    </ul>
+</nav>
+</section>
+
+<div class="categories"><br><br><br>
+    <h2>Recipe categories</h2><br><br><br>
+    <ul type="none" class="items">
+        <li class="list2"><a href='appetizer.html'>Appetizers<br><img class="firstimg" src="3-Ingredient-Appetizers-38e65f4cf4d04135b26c591181f854d4.jpg"></a></li>
+        <li class="list2"><a href="beef.html">Beef<br><img class="firstimg" src="Slow-Cooker-Beef-Stew-Recipe-f.jpg"></a></li>
+        <li class="list2"><a href="chickenbiri.html">Chicken<br><img class="firstimg"  src="Indian-Curry-Chicken-Recipe-1200-EatSimpleFood.com_.jpg"></a></li>
+        <li class="list2"><a href="vegetarian.html">vegetarian<br><img class="firstimg" src="easy-vegetarian-recipes-chickpea-salad-smashed-cucumbers-1656600167.jpeg"></a></li>
+        <li class="list2"><a href="dessert.html">Desserts<br><img class="firstimg" src="photo-1551024601-bec78aea704b.jpg"></a></li>
+    </ul>
+</div>
+<div class="famous">
+<h1>TOP RATED RECIPES &#11088;</h1><br><br>
+<section class="sec2"><a href="chickenbiri.html" id="link">
+    <img src="chickenbiriyanai.jpg" id="secimg">
+<h4 id="head">CHICKEN BIRIYANI</h4></a>
+<p id="about">Chicken Biryani is a delicious savory rice dish that is loaded with spicy marinated chicken, caramelized onions, and flavorful saffron rice.</p>
+<br><pre><button onclick="prv()">&laquo; </button>    <button onclick="nxt()">&raquo;</button></pre>
+</section>
+    </div>
+<div class="last">
+
+</div>
+</body>
+</html>
+
+
+
+
